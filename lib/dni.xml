@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<con id="dni">
+		<int min="10000000" max="90000000" paso="1" />
+		<char tipo="M" />
+	</con>
+</Columnas>

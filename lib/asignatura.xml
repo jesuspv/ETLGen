@@ -1,0 +1,46 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="asignatura">
+		<cte>Algoritmia Avanzada</cte>
+		<cte>Bases de Datos Avanzadas</cte>
+		<cte>Bases de Datos Distribuidas</cte>
+		<cte>Bases de Datos I</cte>
+		<cte>Bases de Datos II</cte>
+		<cte>Bases de Datos Multidimensionales</cte>
+		<cte>Diseño de Sistemas Software</cte>
+		<cte>Diseño y Análisis de Algoritmos</cte>
+		<cte>Fundamentos de Programación II</cte>
+		<cte>Herramientas de Programación</cte>
+		<cte>Informática Musical</cte>
+		<cte>Ingeniería del Lenguaje Natural</cte>
+		<cte>Ingeniería del Software I</cte>
+		<cte>Lenguajes, Gramáticas y Autómatas</cte>
+		<cte>Procesadores de Lenguajes</cte>
+		<cte>Programación Concurrente</cte>
+		<cte>Programación en Entornos Interactivos</cte>
+		<cte>Programación en Internet</cte>
+		<cte>Programación Orientada a Objetos</cte>
+		<cte>Programación y Estructuras de Datos</cte>
+		<cte>Sistemas de Información Semiestructurada</cte>
+		<cte>Aprendizaje</cte>
+		<cte>Bases de Datos Avanzadas</cte>
+		<cte>Compiladores I</cte>
+		<cte>Compiladores II</cte>
+		<cte>Diseño y Gestión de Bases de Datos</cte>
+		<cte>Esquemas Algorítmicos</cte>
+		<cte>Fundamentos de las Bases de Datos</cte>
+		<cte>Fundamentos de Programación</cte>
+		<cte>Ingeniería del Software I</cte>
+		<cte>Lenguajes, Gramáticas y Autómatas</cte>
+		<cte>Programación Concurrente</cte>
+		<cte>Programación en Entornos Interactivos</cte>
+		<cte>Programación Metódica</cte>
+		<cte>Programación Orientada a Objetos</cte>
+		<cte>Reconocimiento de Formas</cte>
+		<cte>Sistemas Informáticos</cte>
+		<cte>Sistemas Informáticos Distribuidos</cte>
+		<cte>Teoría de la Complejidad</cte>
+		<cte>Tipos Abstractos de Datos</cte>
+	</dis>
+</Columnas>

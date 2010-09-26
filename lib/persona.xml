@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="persona-nombre">
+		<cte>Antonio</cte>
+		<cte>Bernardo</cte>
+		<cte>Carlos</cte>
+		<cte>Diego</cte>
+		<cte>Eduardo</cte>
+		<cte>Fernando</cte>
+		<cte>Guillermo</cte>
+		<cte>Hector</cte>
+		<cte>Ignacio</cte>
+		<cte>Jesus</cte>
+		<cte>Kerry</cte>
+		<cte>Luis</cte>
+		<cte>Marcos</cte>
+		<cte>Nicolas</cte>
+		<cte>Oliver</cte>
+		<cte>Pablo</cte>
+		<cte>Quentin</cte>
+		<cte>Rafael</cte>
+		<cte>Salvador</cte>
+		<cte>Teodoro</cte>
+		<cte>Ulrico</cte>
+		<cte>Valeriano</cte>
+		<cte>Walker</cte>
+		<cte>Xavier</cte>
+		<cte>Yoshi</cte>
+		<cte>Zacarias</cte>
+		<cte>Agustin</cte>
+		<cte>Roman</cte>
+		<cte>Alberto</cte>
+		<cte>Pascual</cte>
+		<cte>Señor</cte>
+		<cte>Eva</cte>
+		<cte>Margarita</cte>
+		<cte>Isolina</cte>
+		<cte>Jose</cte>
+		<cte>Luis</cte>
+		<cte>Amparo</cte>
+		<cte>Señora</cte>
+		<cte>Miguel</cte>
+		<cte>Ana</cte>
+		<cte>Caton</cte>
+		<cte>Rosa</cte>
+		<cte>Evaristo</cte>
+		<cte>Pedro</cte>
+		<cte>Abundio</cte>
+		<cte>Francisco</cte>
+		<cte>Maria</cte>
+		<cte>Fernando</cte>
+		<cte>Marco</cte>
+		<cte>Concha</cte>
+		<cte>Dolores</cte>
+		<cte>Toribio</cte>
+		<cte>Lidia</cte>
+		<cte>Felicidad</cte>
+		<cte>Maria Dolores</cte>
+		<cte>Dolores</cte>
+		<cte>Juan Antonio</cte>
+		<cte>Juan Carlos</cte>
+		<cte>Miguel Angel</cte>
+		<cte>Jorge Javier</cte>
+		<cte>Paca</cte>
+		<cte>Carmen</cte>
+		<cte>Justo</cte>
+		<cte>Natalia</cte>
+		<cte>Cristina</cte>
+		<cte>Irene</cte>
+		<cte>Ana</cte>
+		<cte>Patricia</cte>
+		<cte>Isabel</cte>
+		<cte>Veronica</cte>
+		<cte>Barbara</cte>
+		<cte>Chenoa</cte>
+		<cte>Dominga</cte>
+		<cte>Davinia</cte>
+		<cte>Eden</cte>
+		<cte>Elena</cte>
+		<cte>Fe</cte>
+		<cte>Gisela</cte>
+		<cte>Holanda</cte>
+		<cte>Katie</cte>
+		<cte>Loyola</cte>
+		<cte>Marisa</cte>
+		<cte>Nadia</cte>
+		<cte>Olivia</cte>
+		<cte>Paloma</cte>
+		<cte>Quira</cte>
+		<cte>Raquel</cte>
+		<cte>Sabrina</cte>
+		<cte>Teresa</cte>
+		<cte>Uma</cte>
+		<cte>Wendy</cte>
+		<cte>Xena</cte>
+		<cte>Yean</cte>
+		<cte>Zarai</cte>
+	</dis>
+	<dis id="persona-apellido">
+		<cte>Garcia</cte>
+		<cte>Mendez</cte>
+		<cte>Pardillo</cte>
+		<cte>Vela</cte>
+		<cte>Lopez</cte>
+		<cte>Iglesias</cte>
+		<cte>Sanchez</cte>
+		<cte>Trujillo</cte>
+		<cte>Gomez</cte>
+		<cte>Perez</cte>
+		<cte>Bernardez</cte>
+		<cte>Pardo</cte>
+		<cte>Montoyo</cte>
+		<cte>Ruiz</cte>
+		<cte>Cazorla</cte>
+		<cte>Quevedo</cte>
+		<cte>Montesinos</cte>
+		<cte>Zaragoza</cte>
+		<cte>Soriano</cte>
+		<cte>Gonzalez</cte>
+		<cte>Fernandez</cte>
+		<cte>Bernabeu</cte>
+		<cte>Bailen</cte>
+		<cte>de la Ossa</cte>
+		<cte>Parra</cte>
+		<cte>Gomis</cte>
+		<cte>Castro</cte>
+		<cte>Cano</cte>
+		<cte>Pedroche</cte>
+		<cte>Correa</cte>
+		<cte>Gil</cte>
+		<cte>Alonso</cte>
+		<cte>Torres</cte>
+		<cte>Bragueta</cte>
+		<cte>Suelta</cte>
+		<cte>Cabeza</cte>
+		<cte>Compostizo</cte>
+		<cte>Calavera</cte>
+		<cte>Calva</cte>
+		<cte>Comino</cte>
+		<cte>Grande</cte>
+		<cte>Conejo</cte>
+		<cte>Enamorado</cte>
+		<cte>Dios</cte>
+		<cte>Pujol</cte>
+		<cte>Estan</cte>
+		<cte>Camino</cte>
+		<cte>Fina</cte>
+		<cte>Segura</cte>
+		<cte>Flores</cte>
+		<cte>del Campo</cte>
+		<cte>Gato</cte>
+		<cte>Sardina</cte>
+		<cte>Lamata</cte>
+		<cte>Feliz</cte>
+		<cte>Loro</cte>
+		<cte>Raro</cte>
+		<cte>Macarrilla</cte>
+		<cte>Franco</cte>
+		<cte>Marco</cte>
+		<cte>Gol</cte>
+		<cte>Mier</cte>
+		<cte>Decilla</cte>
+		<cte>Nino</cte>
+		<cte>Garabato</cte>
+		<cte>Pechoabierto</cte>
+		<cte>del Cacho</cte>
+		<cte>Piernabierta</cte>
+		<cte>Zas</cte>
+		<cte>de Piernas</cte>
+		<cte>de la Polla</cte>
+		<cte>Ponte</cte>
+		<cte>Alegre</cte>
+		<cte>Pulpito</cte>
+		<cte>Salido</cte>
+		<cte>del Pozo</cte>
+		<cte>Sin</cte>
+		<cte>Mayordomo</cte>
+		<cte>Mas</cte>
+		<cte>Trabajo</cte>
+		<cte>Cumplido</cte>
+		<cte>Verdugo</cte>
+		<cte>de Dios</cte>
+		<cte>Miren</cte>
+		<cte>Amiano</cte>
+		<cte>Folla</cte>
+		<cte>Doblado</cte>
+		<cte>Culo</cte>
+		<cte>Bonito</cte>
+		<cte>Coco</cte>
+		<cte>Cuadrado</cte>
+		<cte>Larrosa</cte>
+		<cte>Espinosa</cte>
+		<cte>Cuadrado</cte>
+		<cte>Redondo</cte>
+		<cte>Porrero</cte>
+		<cte>Delicado</cte>
+		<cte>Mira</cte>
+		<cte>Iborra</cte>
+		<cte>Vaquero Becerro</cte>
+		<cte>Leon</cte>
+		<cte>de la Selva</cte>
+		<cte>Rubio</cte>
+		<cte>Negro</cte>
+		<cte>Pampara</cte>
+		<cte>Cuatro</cte>
+		<cte>Toro</cte>
+		<cte>Manso</cte>
+		<cte>Martin</cte>
+		<cte>Paz</cte>
+		<cte>Amor</cte>
+		<cte>Marco</cte>
+		<cte>de la Puerta</cte>
+		<cte>Cuadros</cte>
+		<cte>de Madera</cte>
+		<cte>de la Cabeza</cte>
+		<cte>Bron</cte>
+		<cte>Franco</cte>
+		<cte>Conejo</cte>
+		<cte>Roto</cte>
+		<cte>Prepucio</cte>
+		<cte>Salido</cte>
+		<cte>Baile</cte>
+		<cte>Lapieza</cte>
+		<cte>Compas</cte>
+		<cte>Monje</cte>
+		<cte>Vicioso</cte>
+		<cte>Porro</cte>
+		<cte>Rico</cte>
+		<cte>Esparrago</cte>
+		<cte>Triguero</cte>
+		<cte>Vaca</cte>
+		<cte>Rey</cte>
+		<cte>España</cte>
+		<cte>Mata</cte>
+		<cte>Salvador</cte>
+		<cte>de España</cte>
+		<cte>Zorrilla</cte>
+	</dis>
+	<con id="persona">
+		<ref gen="persona-nombre" />
+		<sp val=" " />
+		<ref gen="persona-apellido" />
+		<sp val=" " />
+		<ref gen="persona-apellido" />
+	</con>
+	<con id="persona-apellidos">
+		<ref gen="persona-apellido" />
+		<sp val=" " />
+		<ref gen="persona-apellido" />
+	</con>
+</Columnas>

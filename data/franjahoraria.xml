@@ -1,0 +1,51 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<dis id="FRH_CATEGORIA">
+			<cte>Mañana</cte>
+			<cte>Tarde</cte>
+			<cte>Noche</cte>
+			<cte>Mediodia</cte>
+		</dis>
+		<con id="FRH_CODIGO">
+			<con>
+				<dis>
+					<cte>0</cte>
+					<cte>1</cte>
+				</dis>
+				<int min="0" max="9" paso="1" />
+			</con>
+			<cte>:</cte>
+			<dis>
+				<cte>00</cte>
+				<cte>15</cte>
+				<cte>30</cte>
+				<cte>45</cte>
+			</dis>
+			<cte>-</cte>
+			<con>
+				<dis>
+					<cte>0</cte>
+					<cte>1</cte>
+				</dis>
+				<int min="0" max="9" paso="1" />
+			</con>
+			<cte>:</cte>
+			<dis>
+				<cte>00</cte>
+				<cte>15</cte>
+				<cte>30</cte>
+				<cte>45</cte>
+			</dis>
+		</con>
+		<real id="FRH_DURACION" min="1.0" max="4.0" paso="0.5" escala="1" />
+		<int id="FRH_HORA_FIN" min="8" max="22" paso="1" />
+		<int id="FRH_HORA_INICIO" min="7" max="21" paso="1" />
+		<ref id="FRH_ID" gen="ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>FRH_CODIGO</columna></candidata>
+		<candidata><columna>FRH_ID</columna></candidata>
+	</Restricciones>
+</Tabla>

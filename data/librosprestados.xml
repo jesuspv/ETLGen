@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ajena id="FK_ALUMNO;FK_ASIGNATURA;FK_EXAMEN;FK_FECHA" tabla="abstencion"
+			nom-colum="FK_ALUMNO;FK_ASIGNATURA;FK_EXAMEN;FK_FECHA" />
+		<ajena id="FK_LIBRO" tabla="libro" nom-colum="LIB_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata>
+			<columna>FK_ALUMNO;FK_ASIGNATURA;FK_EXAMEN;FK_FECHA</columna>
+			<columna>FK_LIBRO</columna>
+		</candidata>
+	</Restricciones>
+</Tabla>

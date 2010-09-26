@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="AREA_ID" gen="ID" />
+		<ref id="AREA_NOMBRE" gen="area" />
+		<ajena id="FK_AREA_DEPARTAMENTO" tabla="departamento" nom-colum="DPTO_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>AREA_NOMBRE</columna></candidata>
+		<candidata><columna>AREA_ID</columna></candidata>
+		<no-nulo><columna>FK_AREA_DEPARTAMENTO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

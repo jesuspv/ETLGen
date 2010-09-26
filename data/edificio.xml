@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<real id="EDI_ALTURA_PLANTA" min="2.0" max="10.0" paso="0.5" />
+		<con id="EDI_CODIGO">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<int min="1" max="9" paso="1" />
+		</con>
+		<ref id="EDI_DESCRIPCION" gen="descripcion" />
+		<int id="EDI_DISTANCIA_BIBLIO_ESPECIAL" min="10" max="1000" paso="10" />
+		<int id="EDI_DISTANCIA_BIBLIO_GENERAL" min="10" max="1000" paso="10" />
+		<int id="EDI_DISTANCIA_CLUB_SOCIAL" min="10" max="1000" paso="10" />
+		<ref id="EDI_FECHA_CONSTRUCCION" gen="fecha" />
+		<ref id="EDI_ID" gen="ID" />
+		<ref id="EDI_NOMBRE" gen="edificio" />
+		<int id="EDI_NUM_AULAS" min="10" max="50" paso="5" />
+		<int id="EDI_NUM_PLANTAS" min="0" max="5" paso="1" />
+		<dis id="EDI_ZONA_CAMPUS">
+			<cte>Norte</cte>
+			<cte>Sur</cte>
+			<cte>Este</cte>
+			<cte>Oeste</cte>
+			<cte>Centro</cte>
+		</dis>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>EDI_CODIGO</columna></candidata>
+		<candidata><columna>EDI_ID</columna></candidata>
+	</Restricciones>
+</Tabla>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="carrera">
+		<cte>Ingenieria Tecnica en Informatica de Gestion</cte>
+		<cte>Ingenieria Tecnica en Informatica de Sistemas</cte>
+		<cte>Ingenieria Superior en Informatica</cte>
+		<cte>Ingenieria en Superior de Arquitectura</cte>
+		<cte>Ingenieria en Obras Publicas</cte>
+		<cte>Ingenieria Civil</cte>
+		<cte>Ingenieria Tecnica en Arquitectura</cte>
+		<cte>Ingenieria Tecnica en Sonido e Imagen</cte>
+		<cte>Ingeniero Técnico de Telecomunicación</cte>
+	</dis>
+</Columnas>

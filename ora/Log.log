@@ -1,0 +1,45 @@
+Exportación iniciada a las 05/20/2004 7:48:18 PM
+********************************************************************************
+*  Exportar de OWB Versión: 9.0.2.62.3   Versión: 9.0.2.0.0
+*  Usuario: bdm0412   Cadena de Conexión: (DESCRIPTION=(ADDRESS=(HOST=oraculo.eps.ua.es)(PROTOCOL=tcp)(PORT=1521))(CONNECT_DATA=(SID=ORCL)))
+*  Archivo de Datos: C:\bdm\EDUCACION-EVALUACION-20040520_1947.mdl
+*  Archivo Log: C:\bdm\Log.log   Nivel de Mensaje de Log: ALL
+*  Nombres Físicos: Y   Separador de Campos: |   Juego de Caracteres: WE8MSWIN1252
+*  Proyecto: EDUCACION   Datos de Configuración: Y
+********************************************************************************
+ 
+ 
+Recuentos para la Utilidad Exportar de OWB
+-----------------------------
+ 
+Total de Proyectos Procesados por Exportar = 1
+ 
+ 
+-------------------------------
+Proyecto = EDUCACION
+ 
+       Entidad en Proyecto             Agregada
+-------------------------------      -----
+                 DATAWAREHOUSE:          1
+                  BUSINESSAREA:          1
+                         TABLE:          2
+                     DIMENSION:          8
+                         LEVEL:         57
+                     HIERARCHY:         25
+             LEVELRELATIONSHIP:         73
+                          FACT:          3
+      BUSINESSAREARELATIONSHIP:         13
+                       MEASURE:         18
+                        COLUMN:        789
+          FACTFOREIGNKEYCOLUMN:         15
+                     UNIQUEKEY:        116
+                    PRIMARYKEY:          4
+                    FOREIGNKEY:          4
+                FACTFOREIGNKEY:         15
+            SEGMENTEDUNIQUEKEY:          2
+              FUNCTIONCATEGORY:          2
+                   CONFIGPARAM:       1203
+                   CHILDCONFIG:        469
+
+
+Exportación terminada a las 05/20/2004 7:48:19 PM

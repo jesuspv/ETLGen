@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="PROV_ID" gen="ID" />
+		<ref id="PROV_NOMBRE" gen="provincia" />
+		<ajena id="FK_PROVINCIA_PAIS_NAC" tabla="pais" nom-colum="PAIS_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>PROV_NOMBRE</columna></candidata>
+		<candidata><columna>PROV_ID</columna></candidata>
+		<no-nulo><columna>FK_PROVINCIA_PAIS_NAC</columna></no-nulo>
+	</Restricciones>
+</Tabla>

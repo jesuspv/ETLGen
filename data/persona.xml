@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="PER_APELLIDOS" gen="persona-apellidos" />
+		<ref id="PER_CALLE_RESIDENCIA" gen="calle" />
+		<int id="PER_CP_NACIMIENTO" min="10000" max="90000" paso="1" />
+		<int id="PER_DIA_NACIMIENTO" min="1" max="30" paso="1" />
+		<dis id="PER_DISCAPACITACION">
+			<cte>Ninguna</cte>
+			<cte>Cegera</cte>
+			<cte>Sindrome de Dawn</cte>
+			<cte>Paraplejia parcial</cte>
+			<cte>Amputacion de brazo</cte>
+			<cte>Amputacion de pierna</cte>
+			<cte>Sordera</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+		</dis>
+		<ref id="PER_DNI" gen="dni" />
+		<dis id="PER_ESTADO_CIVIL">
+			<cte>S</cte>
+			<cte>C</cte>
+			<cte>V</cte>
+		</dis>
+		<ref id="PER_ETNIA" gen="etnia" />
+		<ref id="PER_EXTRANJERO" gen="bool" />
+		<ref id="PER_FECHA_FIN_BUP" gen="fecha" />
+		<ref id="PER_FECHA_FIN_COU" gen="fecha" />
+		<ref id="PER_FECHA_FIN_EGB" gen="fecha" />
+		<ref id="PER_FECHA_FIN_FP" gen="fecha" />
+		<ref id="PER_FECHA_PRIMER_INGRESO" gen="fecha" />
+		<ref id="PER_HIJO_UNICO" gen="bool" />
+		<ref id="PER_ID" gen="ID" />
+		<real id="PER_INGRESOS_MENSUAL" min="300.0" max="2000.0" paso="500.0" escala="2" />
+		<dis id="PER_MES_NOMBRE_NACIMIENTO">
+			<cte>Enero</cte>
+			<cte>Febrero</cte>
+			<cte>Marzo</cte>
+			<cte>Abril</cte>
+			<cte>Mayo</cte>
+			<cte>Junio</cte>
+			<cte>Julio</cte>
+			<cte>Agosto</cte>
+			<cte>Septiembre</cte>
+			<cte>Octubre</cte>
+			<cte>Noviembre</cte>
+			<cte>Diciembre</cte>
+		</dis>
+		<int id="PER_MES_NUM_NACIMIENTO" min="1" max="12" paso="1" />
+		<dis id="PER_NACIONALIDAD">
+			<cte>Español</cte>
+			<cte>Español</cte>
+			<cte>Ingles</cte>
+			<cte>Frances</cte>
+			<cte>Italiano</cte>
+			<cte>Aleman</cte>
+			<cte>Japones</cte>
+		</dis>
+		<ref id="PER_NOMBRE" gen="persona-nombre" />
+		<real id="PER_NOTA_ACCESO" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<ref id="PER_NOTA_LIT_BIOLOGIA" gen="nota" />
+		<ref id="PER_NOTA_LIT_DIBUJO" gen="nota" />	
+		<ref id="PER_NOTA_LIT_FILOSOFIA" gen="nota" />
+		<ref id="PER_NOTA_LIT_FISICA" gen="nota" />
+		<ref id="PER_NOTA_LIT_HISTORIA" gen="nota" />
+		<ref id="PER_NOTA_LIT_LITERATURA" gen="nota" />
+		<ref id="PER_NOTA_LIT_MATES" gen="nota" />
+		<ref id="PER_NOTA_LIT_QUIMICA" gen="nota" />
+		<real id="PER_NOTA_NUM_BIOLOGIA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_DIBUJO" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_FILOSOFIA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_FISICA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_HISTORIA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_LITERATURA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_MATES" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<real id="PER_NOTA_NUM_QUIMICA" min="5.0" max="10.0" paso="0.25" escala="2" />
+		<int id="PER_NUM_CARRERAS_MAT" min="1" max="5" paso="1" />
+		<int id="PER_NUM_HERMANOS" min="1" max="5" paso="1" />
+		<int id="PER_NUM_TARJETA_UNI" min="100000000" max="999999999" paso="1" />
+		<dis id="PER_OPCION_ACCESO">
+			<cte>A</cte>
+			<cte>B</cte>
+			<cte>C</cte>
+			<cte>D</cte>
+		</dis>
+		<dis id="PER_ORDEN_HERMANO ">
+			<cte>primero</cte>
+			<cte>segundo</cte>
+			<cte>tercero</cte>
+			<cte>cuarto</cte>
+			<cte>quinto</cte>
+		</dis>
+		<ref id="PER_RELIGION" gen="religion" />
+		<dis id="PER_SEXO ">
+			<cte>V</cte>
+			<cte>M</cte>
+		</dis>
+		<dis id="PER_TIPO_FAMILIA ">
+			<cte>Normal</cte>
+			<cte>Familia Numerosa</cte>
+		</dis>
+		<ref id="PER_TRABAJANDO" gen="bool" />
+		<dis id="PER_TRABAJO ">
+			<cte>Informatico</cte>
+			<cte>Camarero</cte>
+			<cte>Ayudante</cte>
+			<cte>Relaciones Publicas</cte>
+			<cte>Dependiente</cte>
+		</dis>
+		<ref id="FES_SELECTIVIDAD" gen="fecha" />
+		<int id="ANN_ANYO" min="1930" max="1990" paso="1" />
+		<ajena id="FK_PERSONA_CIUDAD_NAC" tabla="ciudad" nom-colum="CIU_ID" />
+		<ajena id="FK_PERSONA_CIUDAD_RES" tabla="ciudad" nom-colum="CIU_ID" />
+		<ajena id="FK_PERSONA_COLEGIOBUP" tabla="colegioBUP" nom-colum="COLB_ID" />
+		<ajena id="FK_PERSONA_COLEGIOCOU" tabla="colegioCOU" nom-colum="COLC_ID" />
+		<ajena id="FK_PERSONA_COLEGIOEGB" tabla="colegioEGB" nom-colum="COLE_ID" />
+		<ajena id="FK_PERSONA_COLEGIOFP" tabla="colegioFP" nom-colum="COLF_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>PER_DNI</columna></candidata>
+		<candidata><columna>PER_ID</columna></candidata>
+		<no-nulo><columna>FK_PERSONA_CIUDAD_NAC</columna></no-nulo>
+		<no-nulo><columna>FK_PERSONA_CIUDAD_RES</columna></no-nulo>
+		<no-nulo><columna>FK_PERSONA_COLEGIOBUP</columna></no-nulo>
+		<no-nulo><columna>FK_PERSONA_COLEGIOCOU</columna></no-nulo>
+		<no-nulo><columna>FK_PERSONA_COLEGIOEGB</columna></no-nulo>
+		<no-nulo><columna>FK_PERSONA_COLEGIOFP</columna></no-nulo>
+		<no-nulo><columna>FES_SELECTIVIDAD</columna></no-nulo>
+		<no-nulo><columna>ANN_ANYO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

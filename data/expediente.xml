@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<real id="EXP_CRED_OBL_ACTUAL" min="5.0" max="300.0" escala="2" paso="0.5" />
+		<real id="EXP_CRED_OPT_ACTUAL" min="5.0" max="300.0" escala="2" paso="0.5" />
+		<real id="EXP_CRED_TRO_ACTUAL" min="5.0" max="300.0" escala="2" paso="0.5" />
+		<ref id="EXP_FECHA_INGRESO" gen="fecha" />
+		<dis id="EXP_FORMA_ACAD_ACTUAL">
+			<cte>EGB</cte>
+			<cte>FP</cte>
+			<cte>COU</cte>
+			<cte>Licenciatura</cte>
+		</dis>
+		<ref id="EXP_ID" gen="ID" />
+		<real id="EXP_NOTA_MEDIA_ACTUAL" min="1.0" max="10.0" escala="2" paso="0.5" />
+		<int id="EXP_NUMERO" min="10000" max="99999" paso="1" />
+		<int id="EXP_ORDEN_INGRESO" min="1000" max="9999" paso="1" />
+		<ajena id="FK_EXPEDIENTE_PERSONA" tabla="persona" nom-colum="PER_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>EXP_NUMERO</columna></candidata>
+		<candidata><columna>EXP_ID</columna></candidata>
+		<no-nulo><columna>FK_EXPEDIENTE_PERSONA</columna></no-nulo>
+	</Restricciones>
+</Tabla>

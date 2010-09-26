@@ -1,0 +1,75 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<int id="LIB_ANYO_PUBLICACION" min="1900" max="2004" paso="1" />
+		<ref id="LIB_AUTOR_SECUNDARIO_1" gen="persona" />
+		<ref id="LIB_AUTOR_SECUNDARIO_2" gen="persona" />
+		<ref id="LIB_BIBLIOGRAFIA_RECOMENDADA" gen="bool" />
+		<ref id="LIB_CD" gen="bool" />
+		<int id="LIB_CDU_1" min="100000" max="999999" paso="1" />
+		<int id="LIB_CDU_2" min="100000" max="999999" paso="1" />
+		<int id="LIB_DEPOSITO_LEGAL" min="100000" max="999999" paso="1" />
+		<con id="LIB_DIMENSIONES">
+			<int min="20" max="500" paso="5" />
+			<cte>x</cte>
+			<int min="20" max="300" paso="5" />
+			<cte>x</cte>
+			<int min="10" max="100" paso="2" />
+		</con>
+		<ref id="LIB_EDITORIAL" gen="persona-apellido" />
+		<ref id="LIB_GRAFICOS" gen="bool" />
+		<ref id="LIB_ID" gen="ID" />
+		<dis id="LIB_IDIOMA">
+			<cte>Español</cte>
+			<cte>Español</cte>
+			<cte>Ingles</cte>
+			<cte>Frances</cte>
+			<cte>Italiano</cte>
+			<cte>Aleman</cte>
+			<cte>Japones</cte>
+		</dis>
+		<int id="LIB_ISBN" min="100000" max="999999" paso="1" />
+		<dis id="LIB_LUGAR_PUBLICACION">
+			<cte>España</cte>
+			<cte>Inglaterra</cte>
+			<cte>EEUU</cte>
+			<cte>Alemania</cte>
+			<cte>Italia</cte>
+			<cte>Francia</cte>
+			<cte>Holanda</cte>
+			<cte>Japon</cte>
+		</dis>
+		<ref id="LIB_MATERIA_1" gen="area" />
+		<ref id="LIB_MATERIA_2" gen="area" />
+		<ref id="LIB_MATERIA_3" gen="area" />
+		<ref id="LIB_MATERIA_4" gen="area" />
+		<ref id="LIB_NOTA_GENERAL" gen="descripcion" />
+		<int id="LIB_NUM_AUTORES" min="1" max="10" paso="1" />
+		<int id="LIB_NUM_CAPITULOS" min="1" max="100" paso="1" />
+		<int id="LIB_NUM_EJEMPLARES" min="100" max="10000" paso="1" />
+		<int id="LIB_NUM_PAGINAS" min="100" max="1000" paso="5" />
+		<con id="LIB_SERIE">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<con id="LIB_SIGNATURA">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<ref id="LIB_TIPO" gen="area" />
+		<ref id="LIB_TITULO" gen="asignatura" />
+		<ajena id="FK_LIBRO_BIBLIOTECA" tabla="biblioteca" nom-colum="BIB_ID" />
+		<ajena id="FK_LIBRO_AUTOR" tabla="autor" nom-colum="AUT_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>LIB_ISBN</columna></candidata>
+		<candidata><columna>LIB_ID</columna></candidata>
+		<no-nulo><columna>FK_LIBRO_BIBLIOTECA</columna></no-nulo>
+		<no-nulo><columna>FK_LIBRO_AUTOR</columna></no-nulo>
+	</Restricciones>
+</Tabla>

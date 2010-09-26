@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="web">
+		<cte>http://www.alu.ua.es/j/jivg1/imagenesJavi.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jivg1/imagenesBego.htm</cte>
+		<cte>http://www.alu.ua.es/j/imagenesAmigos.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jivg1/index.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jivg1/gente.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jivg1/ellos.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jivg1/ella.htm</cte>  
+		<cte>http://www.alu.ua.es/va/personal.html</cte>  
+		<cte>http://www.alu.ua.es/es/personal.html</cte>  
+		<cte>http://www.alu.ua.es/d/dcmc/Enlaces.htm</cte>  
+		<cte>http://www.alu.ua.es/modificaciones_ua.html</cte>  
+		<cte>http://www.alu.ua.es/modificaciones_ua.html</cte>  
+		<cte>http://www.alu.ua.es/chucho.html</cte>  
+		<cte>http://www.alu.ua.es/v/vfm7/vmovil/index.html</cte>  
+		<cte>http://www.alu.ua.es/v/vmovil/tsm100.html</cte>  
+		<cte>http://www.alu.ua.es/a/are2.html</cte>  
+		<cte>http://www.alu.ua.es/p/pgv6/index.html</cte>  
+		<cte>http://www.alu.ua.es/j/jaua/bsm_marco_iz.htm</cte>  
+		<cte>http://www.alu.ua.es/e/ept2/index2.htm</cte>  
+		<cte>http://www.alu.ua.es/e/ept2/index3.htm</cte>  
+		<cte>http://www.alu.ua.es/a/asb19/index.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jcmg3/main.htm</cte>  
+		<cte>http://www.alu.ua.es/e/ept2/index.htm</cte>  
+		<cte>http://www.alu.ua.es/j/jmsd1/index.htm</cte>  
+		<cte>http://www.alu.ua.es/t/tgi/index.html</cte>  
+		<cte>http://www.alu.ua.es/p/pdp/ere.html</cte>  
+		<cte>http://www.alu.ua.es/e/ejcm/index.htm</cte>  
+		<cte>http://www.alu.ua.es/modeloteorico.htm</cte>  
+	</dis>
+</Columnas>

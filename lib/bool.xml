@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="bool">
+		<cte>S</cte>
+		<cte>N</cte>
+	</dis>
+</Columnas>

@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<dis id="EXA_CATEGORIA">
+			<cte>Global</cte>
+			<cte>Parcial</cte>
+			<cte>Anual</cte>
+			<cte>Cuatrimestral</cte>
+		</dis>
+		<dis id="EXA_DIFICULTAD">
+			<cte>Muy Dificil</cte>
+			<cte>Dificil</cte>
+			<cte>Complejo</cte>
+			<cte>Medio</cte>
+			<cte>Facil</cte>
+			<cte>Muy Facil</cte>
+		</dis>
+		<int id="EXA_DURACION" min="15" max="240" paso="15" />
+		<con id="EXA_EXAMEN">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<ref gen="int2" />
+				<ref gen="int2" />
+		</con>
+		<ref id="EXA_FECHA_ENTREGA_NOTAS" gen="fecha" />
+		<ref id="EXA_FECHA_REVISION" gen="fecha" />
+		<ref id="EXA_ID" gen="ID" />
+		<int id="EXA_NUM_HOJAS" min="0" max="10" paso="1" />
+		<int id="EXA_NUM_HORAS_ESTUDIADAS" min="0" max="100" paso="5" />
+		<int id="EXA_NUM_PREGUNTAS_PRACTICAS" min="0" max="50" paso="1" />
+		<int id="EXA_NUM_PREGUNTAS_TEORICAS" min="0" max="50" paso="1" />
+		<int id="EXA_NUM_PROFESORES" min="1" max="9" paso="1" />
+		<int id="EXA_NUM_TEMAS" min="1" max="30" paso="1" />
+		<real id="EXA_PENALIZACION_ERROR" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<real id="EXA_PENALIZACION_NO_CONTESTADO" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<ref id="EXA_PORCENT_NOTA_ASIGNATURA" gen="porcentaje" />
+		<ref id="EXA_PORCENT_PREGUNTA" gen="porcentaje" />
+		<ref id="EXA_PORCENT_PREGUNTAS_TEORICAS" gen="porcentaje" />
+		<ref id="EXA_PORCENT_PUNTOS_PRACTICOS" gen="porcentaje" />
+		<ref id="EXA_PORCENT_PUNTOS_TEORICAS" gen="porcentaje" />
+		<real id="EXA_PUNTUACION_MAX" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<real id="EXA_PUNTUACION_MED" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<real id="EXA_PUNTUACION_MIN" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<int id="EXA_TIEMPO_ESTIMADO_REALIZA" min="15" max="240" paso="15" />
+		<dis id="EXA_TIPO">
+			<cte>Practico</cte>
+			<cte>Teorico</cte>
+		</dis>
+		<int id="PR1_ID" min="0" max="1000" paso="1" />
+		<ref id="PR1_NOMBRE" gen="persona" />
+		<int id="PR2_ID" min="0" max="1000" paso="1" />
+		<ref id="PR2_NOMBRE" gen="persona" />
+		<int id="PR3_ID" min="0" max="1000" paso="1" />
+		<ref id="PR3_NOMBRE" gen="persona" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>EXA_EXAMEN</columna></candidata>
+		<candidata><columna>EXA_ID</columna></candidata>
+		<no-nulo><columna>PR1_ID</columna></no-nulo>
+		<no-nulo><columna>PR2_ID</columna></no-nulo>
+		<no-nulo><columna>PR3_ID</columna></no-nulo>
+		<no-nulo><columna>PR1_NOMBRE</columna></no-nulo>
+		<no-nulo><columna>PR2_NOMBRE</columna></no-nulo>
+		<no-nulo><columna>PR3_NOMBRE</columna></no-nulo>
+	</Restricciones>
+</Tabla>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<con id="ASI_CODIGO">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<ref id="ASI_COORDINADOR" gen="persona" />
+		<real id="ASI_CREDITOS_PRACT" min="1.0" max="8.0" escala="2" paso="0.5" />
+		<real id="ASI_CREDITOS_TEO" min="1.0" max="8.0" escala="2" paso="0.5" />
+		<ref id="ASI_DESCRIPCION" gen="descripcion" />
+		<ref id="ASI_DIRECCION_WEB" gen="web" />
+		<ref id="ASI_ID" gen="ID" />
+		<con id="ASI_INCOMPATIBLE1">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<con id="ASI_INCOMPATIBLE2">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<con id="ASI_INCOMPATIBLE3">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<con id="ASI_INCOMPATIBLE4">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<ref id="ASI_METODO_DOCENTE" gen="descripcion" />
+		<ref id="ASI_NOMBRE" gen="asignatura" />
+		<int id="ASI_NUM_EXAMENES_PREVISTOS" min="1" max="10" paso="1" />
+		<int id="ASI_NUM_INCOMPATIBLES" min="1" max="10" paso="1" />
+		<int id="ASI_NUM_PRERREQUISITOS" min="1" max="10" paso="1" />
+		<int id="ASI_NUM_RECOMENDACIOES" min="1" max="10" paso="1" />
+		<int id="ASI_NUM_TEMAS" min="1" max="50" paso="1" />
+		<ref id="ASI_OBJETIVOS" gen="descripcion" />
+		<ref id="ASI_OFERTADA_LE" gen="bool" />
+		<ref id="ASI_PRERREQUISITO1" gen="asignatura" />
+		<ref id="ASI_PRERREQUISITO2" gen="asignatura" />
+		<ref id="ASI_PRERREQUISITO3" gen="asignatura" />
+		<ref id="ASI_PRERREQUISITO4" gen="asignatura" />
+		<ref id="ASI_RECOMENDACION1" gen="asignatura" />
+		<ref id="ASI_RECOMENDACION2" gen="asignatura" />
+		<ref id="ASI_RECOMENDACION3" gen="asignatura" />
+		<ref id="ASI_RECOMENDACION4" gen="asignatura" />
+		<dis id="ASI_TIPO_EXAMENES_EVALUACION">
+			<cte>Examen Final</cte>
+			<cte>Examenes Parciales</cte>
+		</dis>
+		<dis id="ASI_TIPO_PRACTICAS">
+			<cte>Laboratorios</cte>
+			<cte>Laboratorios</cte>
+			<cte>Laboratorios</cte>
+			<cte>Aularios</cte>
+		</dis>
+		<ajena id="FK_ASIGNATURA_DEPARTAMENTO" tabla="area" nom-colum="AREA_ID" />
+		<ajena id="FK_ASIGNATURA_CARRERA" tabla="carrera" nom-colum="CAR_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>ASI_CODIGO</columna></candidata>
+		<candidata><columna>ASI_ID</columna></candidata>
+		<no-nulo><columna>FK_ASIGNATURA_CARRERA</columna></no-nulo>
+		<no-nulo><columna>FK_ASIGNATURA_DEPARTAMENTO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

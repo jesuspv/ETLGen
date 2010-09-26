@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<con id="fecha">
+		<int min="1" max="28" paso="1" />
+		<cte>/</cte>
+		<int min="1" max="12" paso="1" />
+		<cte>/</cte>
+		<int min="1990" max="2005" paso="1" />
+	</con>
+</Columnas>

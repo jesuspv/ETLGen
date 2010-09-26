@@ -1,0 +1,80 @@
+Alumno:
+<MAT> matricula
+	<EXP> expediente
+		<PER> persona
+			<ANN> año nacimiento
+			<FES> fecha selectividad
+			<CIR> ciudad de residencia
+				<PRR> provincia de residencia
+			<CIN> ciudad de nacimiento
+				<PRN> provincia de nacimiento
+					<PAN> pais de nacimiento
+			<CIE> colegio egb
+				<COLE> ciudad egb
+					<PRE> provincia egb
+			<CIB> colegio bup
+				<COLB> ciudad bup
+					<PRB> provincia bup
+			<CIC> colegio cou
+				<COLC> ciudad cou
+					<PRC> provincia cou
+			<CIF> colegio fp
+				<COLF> ciudad fp
+					<PRF> provincia fp
+Asignatura:
+<ASI> asignatura
+	<ARA> area asignatura
+	<CAR> carrera
+		<ARC> area carrera
+Aula:
+<AUL> aula
+	<EDI> edificio
+
+Departamento:
+<ARD> area departamento
+	<DPTO> departamento
+		<EDI> edificio
+Examen:
+<EXA> examen
+	<PR1> profesor 1
+	<PR2> profesor 2
+	<PR3> profesor 3
+
+Fecha:
+SE GENERA AUTOMATICAMENTE ¡NO TOCAR!
+
+Franja Horaria:
+<FRH> franja horaria
+
+Libro:
+<LIB> libro
+	<BIB> biblioteca
+	<AUT> autor
+		<PAI> pais
+
+Profesor:
+<PRO> profesor
+	<CAR> carrera
+		<DOC> doctorado
+	<CIR> ciudad residencia
+		<PRR> provincia residencia
+	<CIN> ciudad de nacimiento
+		<PRN> provincia de nacimiento
+			<PAN> pais de nacimiento
+	<ANN> año nacimiento
+	<ARD> area departamento
+
+Abstencion:
+HECHO
+
+Asistencia:
+HECHO
+
+Evaluacion:
+HECHO
+
+Libros Estudiados:
+TABLA PUENTE
+
+Libros Prestados:
+TABLA PUENTE

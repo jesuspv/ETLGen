@@ -1,0 +1,57 @@
+
+SQL*Loader: Release 9.2.0.1.0 - Production on Vie Jul 9 10:23:40 2004
+
+Copyright (c) 1982, 2002, Oracle Corporation.  All rights reserved.
+
+Archivo de Control:   C:\Ora9iDS\owb\codegen\ctl\CARGA_TBL_PROVINCIA.ctl
+Juego de caracteres WE8MSWIN1252 especificado para todas las entradas.
+
+Archivo de Datos:      C:\bdm\etlgen\data\provincia.csv
+  Archivo Defectuoso:     C:\Ora9iDS\owb\codegen\ctl\provincia.bad
+  Desechar Archivo:  ninguno especificado
+ 
+ (Permitir todos los registros desechados)
+
+Número a cargar: ALL
+Número a ignorar: 0
+Errores permitidos: 50
+Continuación:    ninguno especificado
+Ruta de acceso utilizada:      Directa
+
+Tabla "TBL_PROVINCIA", cargada de cada registro lógico.
+Opción INSERT activa para esta tabla: REPLACE
+
+   Nombre Columna               Posición   Long  Term Entorno Tipo de dato
+------------------------------ ---------- ----- ---- ---- ---------------------
+"MARCA_TEMPORAL"                        1     *   ;  O(") CHARACTER            
+    NULL if "MARCA_TEMPORAL" = 0X4e554c4c(carácter 'NULL')
+"PROV_ID"                            NEXT     *   ;  O(") CHARACTER            
+    NULL if "PROV_ID" = 0X4e554c4c(carácter 'NULL')
+"PROV_NOMBRE"                        NEXT     *   ;  O(") CHARACTER            
+    NULL if "PROV_NOMBRE" = 0X4e554c4c(carácter 'NULL')
+"FK_PROVINCIA_PAIS_NAC"              NEXT     *   ;  O(") CHARACTER            
+    NULL if "FK_PROVINCIA_PAIS_NAC" = 0X4e554c4c(carácter 'NULL')
+
+
+Tabla "TBL_PROVINCIA":
+  46 Filas se ha cargado correctamente.
+  0 Filas no cargada debido a errores de datos.
+  0 Filas no cargada porque todas las cláusulas WHEN han fallado.
+  0 Filas no cargada porque todos los campos eran nulos.
+
+Tamaño de matriz de enlace no utilizado en ruta de acceso directa.
+Filas de la matriz de columnas:     200
+Bytes de buffer de flujo:  256000
+Bytes de buffer de lectura:   65536
+
+Total de registros lógicos ignorados:          0
+Total de registros lógicos leídos:          46
+Total de registros lógicos rechazados:         0
+Total de registros lógicos desechados:        0
+La optimización de multithread de ruta de acceso directa está desactivada
+
+La ejecución empezó en Vie Jul 09 10:23:40 2004
+La ejecución terminó en Vie Jul 09 10:23:43 2004
+
+Tiempo transcurrido:     00:00:03.04
+Tiempo de CPU:         00:00:00.06

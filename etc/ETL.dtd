@@ -1,0 +1,90 @@
+<!-- Configuracion -->
+<!ELEMENT Configuracion (Generadores, Importaciones, Parametros)>
+<!ELEMENT Generadores (asociar)+>
+<!ATTLIST Generadores
+	valor-nulo CDATA #IMPLIED
+	prob-nulo  CDATA #IMPLIED
+>
+<!ELEMENT asociar EMPTY>
+<!ATTLIST asociar
+	elemento  CDATA #REQUIRED
+	generador CDATA #REQUIRED
+	ruta      CDATA #REQUIRED
+>
+<!ELEMENT Importaciones (ruta)+>
+<!ELEMENT ruta (#PCDATA)>
+
+<!ELEMENT Parametros (cabecera)>
+<!ELEMENT cabecera EMPTY>
+
+<!-- Tabla -->
+<!ELEMENT Tabla (Columnas, Restricciones)>
+<!ATTLIST Tabla
+	sp-campos CDATA #IMPLIED
+	sp-filas  CDATA #IMPLIED
+>
+
+<!ELEMENT Columnas (cte | int | real | char | con | dis | sp | ref | ajena)+>
+<!ATTLIST Columnas
+	delim  CDATA #IMPLIED
+	maxtam CDATA #IMPLIED
+>
+
+<!ELEMENT Restricciones (candidata | unica | no-nulo)*>
+<!ELEMENT candidata (columna)+>
+<!ELEMENT unica     (columna)+>
+<!ELEMENT no-nulo   (columna)+>
+<!ELEMENT columna   (#PCDATA)>
+
+<!-- Generadores -->
+<!ELEMENT cte (#PCDATA)>
+<!ATTLIST cte
+	id    CDATA #IMPLIED
+>
+<!ELEMENT int EMPTY>
+<!ATTLIST int
+	id    CDATA   #IMPLIED
+	min   NMTOKEN #IMPLIED
+	max   NMTOKEN #IMPLIED
+	paso  NMTOKEN #IMPLIED
+>
+<!ELEMENT real EMPTY>
+<!ATTLIST real
+	id     CDATA   #IMPLIED
+	min    NMTOKEN #IMPLIED
+	max    NMTOKEN #IMPLIED
+	paso   NMTOKEN #IMPLIED
+	escala NMTOKEN #IMPLIED
+>
+<!ELEMENT char EMPTY>
+<!ATTLIST char
+	id    CDATA   #IMPLIED
+	tipo  (M | m) #IMPLIED
+>
+<!ELEMENT con (cte | entero | real | char | con | dis | sp | ajena)*>
+<!ATTLIST con
+	id    CDATA #IMPLIED
+>
+<!ELEMENT dis (cte | entero | real | char | con | dis | sp | ajena)*>
+<!ATTLIST dis
+	id    CDATA #IMPLIED
+>
+<!ELEMENT sp EMPTY>
+<!ATTLIST sp
+	id    CDATA #IMPLIED
+	val   CDATA #IMPLIED
+>
+<!ELEMENT ref EMPTY>
+<!ATTLIST ref
+	id  CDATA #IMPLIED
+	gen CDATA #REQUIRED
+>
+<!ELEMENT ajena EMPTY>
+<!ATTLIST ajena
+	tabla       CDATA #REQUIRED
+	delim-colum CDATA #IMPLIED
+	sp-colum    CDATA #IMPLIED
+	sp-filas    CDATA #IMPLIED
+	nom-colum   CDATA #IMPLIED
+	num-colum   CDATA #IMPLIED
+>

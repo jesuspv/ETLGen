@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="DOC_ID" gen="ID" />
+		<ref id="DOC_AREA" gen="area" />
+		<con id="DOC_CODIGO">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<ref gen="int2" />
+		</con>
+		<ref id="DOC_DEPARTAMENTO" gen="departamento" />
+		<ref id="DOC_FECHA_FIN" gen="fecha" />
+		<ref id="DOC_FECHA_INICIO" gen="fecha" />
+		<ref id="DOC_NOMBRE" gen="asignatura" />
+		<dis id="DOC_UNIVERSIDAD">
+			<cte>Universidad de Alicante</cte>
+			<cte>Universidad de Alicante</cte>
+			<cte>Universidad de Alicante</cte>
+			<cte>Universidad de Alicante</cte>
+			<cte>Universidad de Valencia</cte>
+			<cte>Universidad de Madrid</cte>
+			<cte>Universidad de Malaga</cte>
+			<cte>Universidad de Compostela</cte>
+			<cte>Universidad de Granada</cte>
+		</dis>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>DOC_CODIGO</columna></candidata>
+		<candidata><columna>DOC_ID</columna></candidata>
+	</Restricciones>
+</Tabla>

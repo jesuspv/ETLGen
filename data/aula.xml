@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="AUL_AULA_LIBRE_ACCESO" gen="bool" />
+		<int id="AUL_CAPACIDAD" min="15" max="100" paso="5" />
+		<con id="AUL_CODIGO">
+			<dis><cte>A</cte><cte>L</cte></dis>
+			<ref gen="int2" />
+		</con>
+		<ref id="AUL_DESCRIPCION" gen="descripcion" />
+		<ref id="AUL_DESCRIPCION_ORDENADORES" gen="descripcion" />
+		<ref id="AUL_DIMENSIONES" gen="dimension2" />
+		<ref id="AUL_ID" gen="ID" />
+		<ref id="AUL_LABORATORIO" gen="bool" />
+		<int id="AUL_NUM_ASIGNATURAS_UTIL" min="0" max="30" paso="1" />
+		<int id="AUL_NUM_CARRERAS_UTIL" min="0" max="10" paso="1" />
+		<dis id="AUL_PLANTA_NOMBRE">
+			<cte>Sotano</cte>
+			<cte>Baja</cte>
+			<cte>Primera</cte>
+			<cte>Segunda</cte>
+			<cte>Tercera</cte>
+			<cte>Cuarta</cte>
+			<cte>Quinta</cte>
+		</dis>
+		<int id="AUL_PLANTA_NUM" min="0" max="4" paso="1" />
+		<ref id="AUL_PROYECTOR" gen="bool" />
+		<ajena id="FK_AULA_EDIFICIO" tabla="edificio" nom-colum="EDI_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>AUL_CODIGO</columna></candidata>
+		<candidata><columna>AUL_ID</columna></candidata>
+		<no-nulo><columna>FK_AULA_EDIFICIO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

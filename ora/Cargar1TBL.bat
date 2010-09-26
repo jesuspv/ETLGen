@@ -1,0 +1,1 @@
+C:\oracle\ora92\bin\sqlldr.exe bdm0412@oracle/mh10 log=resultado.log control=C:\Ora9iDS\owb\codegen\ctl\%1%.ctl

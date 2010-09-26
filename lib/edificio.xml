@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="edificio">
+		<cte>Escuela Politecnica I</cte>
+		<cte>Escuela Politecnica II</cte>
+		<cte>Aulario I</cte>
+		<cte>Aulario II</cte>
+		<cte>Aulario III</cte>
+		<cte>Aulario IV</cte>
+		<cte>Aulario V</cte>
+	</dis>
+</Columnas>

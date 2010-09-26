@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="COLB_DESCRIPCION" gen="descripcion" />
+		<ref id="COLB_DIRECCION" gen="calle" />
+		<ref id="COLB_ID" gen="ID" />
+		<con id="COLB_NOMBRE">
+			<ref gen="persona-nombre" />
+			<sp />
+			<ref gen="persona-apellido" />
+		</con>
+		<int id="COLB_NUM_ALUMNOS" min="50" max="1000" paso="10" />
+		<ref id="COLB_SUBVENCIONADO" gen="bool" />
+		<dis id="COLB_TIPO">
+			<cte>Privado</cte>
+			<cte>Publico</cte>
+			<cte>Publico</cte>
+			<cte>Publico</cte>
+		</dis>
+		<ajena id="FK_COLEGIOBUP_CIUDAD" tabla="ciudad" nom-colum="CIU_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>COLB_NOMBRE</columna></candidata>
+		<candidata><columna>COLB_ID</columna></candidata>
+		<no-nulo><columna>FK_COLEGIOBUP_CIUDAD</columna></no-nulo>
+	</Restricciones>
+</Tabla>

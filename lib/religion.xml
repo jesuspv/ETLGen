@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="religion">
+		<cte>Cristiana</cte>
+		<cte>Cristiana</cte>
+		<cte>Cristiana</cte>
+		<cte>Ortodoxa</cte>
+		<cte>Arabe</cte>
+		<cte>Budismo</cte>
+	</dis>
+</Columnas>

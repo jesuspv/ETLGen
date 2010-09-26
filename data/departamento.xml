@@ -1,0 +1,41 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<con id="DPTO_CODIGO">
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+		</con>
+		<ref id="DPTO_DIRECTOR" gen="persona" />
+		<int id="DPTO_EDAD_MAX" min="25" max="70" paso="1" />
+		<int id="DPTO_EDAD_MEDIA" min="25" max="70" paso="1" />
+		<int id="DPTO_EDAD_MIN" min="25" max="50" paso="1" />
+		<ref id="DPTO_FECHA_CREACION" gen="fecha" />
+		<ref id="DPTO_FECHA_ULTIMO_INGRESO" gen="fecha" />
+		<ref id="DPTO_ID" gen="ID" />
+		<ref id="DPTO_NOMBRE" gen="departamento" />
+		<int id="DPTO_NUM_BECARIOS" min="1" max="50" paso="1" />
+		<int id="DPTO_NUM_PROFESORES" min="1" max="50" paso="1" />
+		<int id="DPTO_NUM_PROFESORES_ADJUNTOS" min="1" max="50" paso="1" />
+		<int id="DPTO_NUM_PROFESORES_TITULARES" min="1" max="50" paso="1" />
+		<int id="DPTO_PCENT_BECARIOS" min="1" max="100" paso="1" />
+		<int id="DPTO_PCENT_PROFESORES_ADJUNTOS" min="1" max="100" paso="1" />
+		<int id="DPTO_PCENT_PROFESORES_TITULAR" min="1" max="100" paso="1" />
+		<int id="DPTO_PRESUPUESTO" min="1000" max="100000" paso="1000" />
+		<ref id="DPTO_REPRESENTANTE_ALUMNOS_1" gen="persona" />
+		<ref id="DPTO_REPRESENTANTE_ALUMNOS_2" gen="persona" />
+		<int id="DPTO_SALARIO_MAX" min="10000" max="1000000" paso="1000" />
+		<int id="DPTO_SALARIO_MEDIO" min="1000" max="1000000" paso="1000" />
+		<int id="DPTO_SALARIO_MIN" min="1000" max="100000" paso="500" />
+		<ref id="DPTO_SECRETARIO" gen="persona" />
+		<ref id="DPTO_SUBDIRECTOR" gen="persona" />
+		<ajena id="FK_DEPARTAMENTO_EDIFICIO" tabla="edificio" nom-colum="EDI_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>DPTO_CODIGO</columna></candidata>
+		<candidata><columna>DPTO_ID</columna></candidata>
+		<no-nulo><columna>FK_DEPARTAMENTO_EDIFICIO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

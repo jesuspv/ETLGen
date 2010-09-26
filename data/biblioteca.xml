@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="BIB_DESCRIPCION" gen="descripcion" />
+		<ref id="BIB_DIRECTOR" gen="persona" />
+		<ref id="BIB_FECHA_CONSTRUCCION" gen="fecha" />
+		<ref id="BIB_FECHA_ULTIMA_REFORMA" gen="fecha" />
+		<ref id="BIB_ID" gen="ID" />
+		<ref id="BIB_NOMBRE" gen="persona" />
+		<int id="BIB_NUM_COPISTERIAS" min="1" max="10" paso="1" />
+		<int id="BIB_NUM_EMPLEADOS" min="2" max="40" paso="1" />
+		<int id="BIB_NUM_FOTOCOPIADOR" min="1" max="20" paso="1" />
+		<int id="BIB_NUM_LIBROS" min="100" max="20000" paso="10" />
+		<int id="BIB_NUM_ORDENADORES" min="1" max="100" paso="1" />
+		<int id="BIB_NUM_PLANTAS" min="1" max="5" paso="1" />
+		<int id="BIB_NUM_SALAS" min="1" max="50" paso="1" />
+		<dis id="BIB_ZONA_CAMPUS">
+			<cte>Norte</cte>
+			<cte>Sur</cte>
+			<cte>Este</cte>
+			<cte>Oeste</cte>
+			<cte>Centro</cte>
+		</dis>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>BIB_NOMBRE</columna></candidata>
+		<candidata><columna>BIB_ID</columna></candidata>
+	</Restricciones>
+</Tabla>

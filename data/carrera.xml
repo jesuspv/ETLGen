@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<int id="CAR_ANYOS_ACADEMICOS_CICLO_1" min="1" max="5" paso="1" />
+		<int id="CAR_ANYOS_ACADEMICOS_CICLO_2" min="1" max="5" paso="1" />
+		<int id="CAR_ANYO_IMPLANTACION" min="1995" max="2004" paso="1" />
+		<int id="CAR_ANYO_PLAN_SUSTITUIDO" min="1980" max="2004" paso="1" />
+		<int id="CAR_CARGA_LECTIVA_TOTAL" min="100" max="500" paso="5" />
+		<dis id="CAR_CENTRO_RESPONSABLE_CODIGO">
+			<cte>EPS</cte>
+		</dis>
+		<dis id="CAR_CENTRO_RESPONSABLE_NOMBRE">
+			<cte>Escuela Politecnica Superior</cte>
+		</dis>
+		<int id="CAR_CICLO" min="1" max="2" paso="1" />
+		<dis id="CAR_CODIGO">
+			<con>
+				<char tipo="M" />
+				<char tipo="M" />
+				<char tipo="M" />
+			</con>
+		</dis>
+		<int id="CAR_CREDITOS_ANYO_1" min="30" max="99" paso="1" />
+		<int id="CAR_CREDITOS_ANYO_2" min="30" max="99" paso="1" />
+		<int id="CAR_CREDITOS_ANYO_3" min="30" max="99" paso="1" />
+		<int id="CAR_CREDITOS_ANYO_4" min="30" max="99" paso="1" />
+		<int id="CAR_CREDITOS_ANYO_5" min="30" max="99" paso="1" />
+		<ref id="CAR_CREDITOS_PRACTI" gen="bool" />
+		<int id="CAR_CREDITOS_PR1" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_PR2" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_PR3" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_PR4" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_PR5" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_TEO1" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_TEO2" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_TEO3" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_TEO4" min="15" max="60" paso="1" />
+		<int id="CAR_CREDITOS_TEO5" min="15" max="60" paso="1" />
+		<ref id="CAR_CREDITOS_TRABAJOS" gen="bool" />
+		<ref id="CAR_DESCRIPCION" gen="descripcion" />
+		<ref id="CAR_ID" gen="ID" />
+		<ref id="CAR_NOMBRE" gen="carrera" />
+		<con id="CAR_PLAN_SUSTITUIDO">
+			<ref gen="carrera" />
+			<int min="1980" max="2004" paso="1" />
+		</con>
+		<ref id="CAR_PROYECTO_FIN_CAR" gen="bool" />
+		<ajena id="FK_CARRERA_DOCTORADO" tabla="doctorado" nom-colum="DOC_ID" />
+		<ajena id="FK_CARRERA_AREA" tabla="area" nom-colum="AREA_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>CAR_CODIGO</columna></candidata>
+		<candidata><columna>CAR_ID</columna></candidata>
+		<no-nulo><columna>FK_CARRERA_AREA</columna></no-nulo>
+		<no-nulo><columna>FK_CARRERA_DOCTORADO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

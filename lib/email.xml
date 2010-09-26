@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="email">
+		<cte>lorenzo.abad@ua.es</cte>
+		<cte>juan.abascal@ua.es</cte>
+		<cte>abasolo@fyl.uva.es</cte>
+		<cte>museuhist@tinet.fut.es</cte>
+		<cte>abreu@utad.pt</cte>
+		<cte>phfacas@usc.es</cte>
+		<cte>j.r.adams@soton.ac.uk</cte>
+		<cte>dhajam0@clust.uib.es</cte>
+		<cte>paguayo@ugr.es</cte>
+		<cte>jerezmuseoarq@ctv.es</cte>
+		<cte>gaguilella@dipcas.es</cte>
+		<cte>aguilera@ceipac.gh.ub.es</cte>
+		<cte>iarq@gemini.ci.uc.pt</cte>
+		<cte>gabriel.alcalde@udg.es</cte>
+		<cte>ealcorta@unav.es</cte>
+		<cte>fgpalrua@vh.ehu.es</cte>
+		<cte>jalejo@goliat.ugr.es</cte>
+		<cte>calemany@fil.upoc.es</cte>
+		<cte>caa@man.es</cte>
+		<cte>falia@bibl-cr.uclm.es</cte>
+		<cte>anticuario.rah@insde.es</cte>
+		<cte>mavila@fyl.uva.es</cte>
+		<cte>arqueologia@historia.udl.es</cte>
+		<cte>aalonso@unex.es</cte>
+		<cte>jalvar@uhu.es</cte>
+		<cte>epanik@gugu.usal.es</cte>
+		<cte>mnar@mnar.es</cte>
+		<cte>jralvarez@inicia.es</cte> 
+		<cte>jalvarez33@jazzfree.com</cte>
+		<cte>phsusoa@usc.es</cte>
+		<cte>fernando@polifemo.us.es</cte>
+		<cte>tandres@posta.unizar.es</cte>
+		<cte>cantonaccio@wesleyan.edu</cte>
+		<cte>xaquilue@empuries.mac.es</cte>
+		<cte>garanda@platon.ugr.es</cte>
+		<cte>fjaranda@hist-cr.uclm.es</cte>
+		<cte>carmen.aranegui@uv.es</cte>
+		<cte>ferran.arasa@uv.es</cte>
+		<cte>jarce@ceh.csic.es</cte>
+		<cte>cardarco@ull.es</cte>
+		<cte>alicia.arevalo@uca.es</cte>
+	</dis>
+</Columnas>

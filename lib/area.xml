@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="area">
+		<cte>Humanidades</cte>
+		<cte>Ciencia y Tecnologia</cte>
+		<cte>Ciencias Sociales y Juridicas</cte>
+		<cte>Ciencias de la Salud</cte>
+		<cte>Ciencias de la Educacion</cte>
+	</dis>
+</Columnas>

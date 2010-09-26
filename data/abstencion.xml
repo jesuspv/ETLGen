@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ajena id="FK_ASIGNATURA" tabla="asignatura" nom-colum="ASI_ID" />
+		<da_smart_key id="FK_FECHA" file="C:\bdm\etlgen\ora\da_smart_key.txt" />
+		<ajena id="FK_EXAMEN" tabla="examen" nom-colum="EXA_ID" />
+		<ajena id="FK_ALUMNO" tabla="matricula" nom-colum="MAT_ID" />
+		<cte id="DUMMY">1</cte>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>FK_ASIGNATURA</columna>
+		           <columna>FK_FECHA</columna>
+		           <columna>FK_EXAMEN</columna>
+		           <columna>FK_ALUMNO</columna>
+		</candidata>
+		<no-nulo><columna>DUMMY</columna></no-nulo>
+	</Restricciones>
+</Tabla>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<con id="curso">
+		<cte>1997-1998</cte>
+		<cte>1998-1999</cte>
+		<cte>2000-2001</cte>
+		<cte>2001-2002</cte>
+		<cte>2002-2003</cte>
+		<cte>2004-2004</cte>
+		<cte>2004-2005</cte>
+	</con>
+</Columnas>

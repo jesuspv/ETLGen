@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="descripcion">
+		<cte>Es grande y bonito</cte>
+		<cte>Tiene muchas cosas</cte>
+		<cte>Esta me gusta pero es mejor aquella</cte>
+		<cte>No esta mal, pero las hay mejores</cte>
+		<cte>La ultima reforma fue dolorosa</cte>
+		<cte>Aplicado y profesional</cte>
+		<cte>Uno de los mejores</cte>
+		<cte>Debe mejorar</cte>
+		<cte>Progresa adecuadamente</cte>
+	</dis>
+</Columnas>

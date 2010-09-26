@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE ETLConfig SYSTEM "etc/ETL.dtd">
+<Configuracion>
+	<Generadores valor-nulo="NULL" prob-nulo="0.15">
+		<asociar elemento="cte" generador="etlgen.CteGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="int" generador="etlgen.IntGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="real" generador="etlgen.RealGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="char" generador="etlgen.CharGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="con" generador="etlgen.ConGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="dis" generador="etlgen.DisGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="sp" generador="etlgen.SpGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="ref" generador="etlgen.RefGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="ajena" generador="etlgen.AjenaGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+		<asociar elemento="da_smart_key" generador="etlgen.FechaGenerador"
+			ruta="C:\bdm\etlgen\bin\Debug\etlgen.exe" />
+	</Generadores>
+	<Importaciones>
+		<ruta>C:\bdm\etlgen\lib</ruta>
+	</Importaciones>
+	<Parametros>
+		<cabecera />
+	</Parametros>
+</Configuracion>

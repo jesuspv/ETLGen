@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="PRO_APELLIDOS" gen="persona-apellidos" />
+		<con id="PRO_DESPACHO">
+				<char tipo="M" />
+				<ref gen="int2" />
+				<ref gen="int2" />
+		</con>
+		<dis id="PRO_DISCAPACITACION">
+			<cte>Ninguna</cte>
+			<cte>Cegera</cte>
+			<cte>Sindrome de Dawn</cte>
+			<cte>Paraplejia parcial</cte>
+			<cte>Amputacion de brazo</cte>
+			<cte>Amputacion de pierna</cte>
+			<cte>Sordera</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+			<cte>Ninguna</cte>
+		</dis>
+		<ref id="PRO_DNI" gen="dni" />
+		<ref id="PRO_EDIFICIO" gen="edificio" />
+		<ref id="PRO_EMAIL" gen="email" />
+		<dis id="PRO_ESTADO_CIVIL_CODIGO">
+			<cte>S</cte>
+			<cte>C</cte>
+			<cte>V</cte>
+		</dis>
+		<dis id="PRO_ESTADO_CIVIL_DESCRIPCION">
+			<cte>Soltero</cte>
+			<cte>Casado</cte>
+			<cte>Viudo</cte>
+		</dis>
+		<ref id="PRO_ETNIA" gen="etnia" />
+		<ref id="PRO_ID" gen="ID" />
+		<int id="PRO_NACIMIENTO_DIA" min="1" max="28" paso="1" />
+		<int id="PRO_NACIMIENTO_MES" min="1" max="12" paso="1" />
+		<ref id="PRO_NOMBRE" gen="persona-nombre" />
+		<int id="PRO_NUM_HIJOS" min="1" max="8" paso="1" />
+		<ref id="PRO_RELIGION" gen="religion" />
+		<ref id="PRO_RESIDENCIA_CALLE" gen="calle" />
+		<int id="PRO_RESIDENCIA_CODIGO_POSTAL" min="10000" max="90000" paso="1" />
+		<real id="PRO_SALARIO" min="3000.0" max="20000.0" paso="500.0" escala="2" />
+		<dis id="PRO_SEXO">
+			<cte>V</cte>
+			<cte>M</cte>
+		</dis>
+		<int id="PRO_TELEFONO_DESPACHO" min="960000000" max="970000000" paso="1" />
+		<int id="PRO_TELEFONO_MOVIL" min="606000000" max="607000000" paso="1" />
+		<int id="PRO_TELEFONO_PARTIC" min="960000000" max="970000000" paso="1" />
+		<int id="ANN_ANYO" min="1900" max="1990" paso="1" />
+		<ajena id="FK_PROFESOR_CIUDAD_NAC" tabla="ciudad" nom-colum="CIU_ID" />
+		<ajena id="FK_PROFESOR_CIUDAD_RES" tabla="ciudad" nom-colum="CIU_ID" />
+		<ajena id="FK_PROFESOR_CARRERA" tabla="carrera" nom-colum="CAR_ID" />
+		<ajena id="FK_PROFESOR_DEPARTAMENTO" tabla="area" nom-colum="AREA_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>PRO_DNI</columna></candidata>
+		<candidata><columna>PRO_ID</columna></candidata>
+		<no-nulo><columna>ANN_ANYO</columna></no-nulo>
+		<no-nulo><columna>FK_PROFESOR_CARRERA</columna></no-nulo>
+		<no-nulo><columna>FK_PROFESOR_CIUDAD_RES</columna></no-nulo>
+		<no-nulo><columna>FK_PROFESOR_CIUDAD_NAC</columna></no-nulo>
+		<no-nulo><columna>FK_PROFESOR_DEPARTAMENTO</columna></no-nulo>
+	</Restricciones>
+</Tabla>

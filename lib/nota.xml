@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="nota">
+		<cte>Suspenso</cte>
+		<cte>No Presentado</cte>
+		<cte>Aprobado</cte>
+		<cte>Notable</cte>
+		<cte>Sobresaliente</cte>
+		<cte>Matricula de Honor</cte>
+	</dis>
+</Columnas>

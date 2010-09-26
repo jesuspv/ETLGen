@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<con id="dimension2">
+		<int min="10" max="30" paso="1" />
+		<cte>x</cte>
+		<int min="10" max="30" paso="1" />
+	</con>
+</Columnas>

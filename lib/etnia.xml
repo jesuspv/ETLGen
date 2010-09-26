@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="etnia">
+		<cte>Gitano</cte>
+		<cte>Hispano</cte>
+		<cte>Hispano</cte>
+		<cte>Hispano</cte>
+		<cte>Hispano</cte>
+		<cte>Sudamericano</cte>
+		<cte>NorteAmericano</cte>
+	</dis>
+</Columnas>

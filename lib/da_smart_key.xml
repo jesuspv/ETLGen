@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<da_smart_key id="DA_SMART_KEY" file="C:\bdm\etlgen\ora\da_smart_key.txt" />
+</Columnas>

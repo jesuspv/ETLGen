@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="AUT_ETNIA" gen="etnia" />
+		<ref id="AUT_FECHA_NACIMIENTO" gen="fecha" />
+		<ref id="AUT_ID" gen="ID" />
+		<dis id="AUT_LENGUA_NATAL">
+			<cte>Español</cte>
+			<cte>Español</cte>
+			<cte>Ingles</cte>
+			<cte>Frances</cte>
+			<cte>Italiano</cte>
+			<cte>Aleman</cte>
+			<cte>Japones</cte>
+		</dis>
+		<ref id="AUT_NOMBRE" gen="persona" />
+		<dis id="AUT_OCUPACION">
+			<cte>Profesor</cte>
+			<cte>Investigador</cte>
+			<cte>Ingeniero</cte>
+			<cte>Escritor</cte>
+			<cte>Matemático</cte>
+		</dis>
+		<dis id="AUT_RESIDENCIA">
+			<cte>España</cte>
+			<cte>Inglaterra</cte>
+			<cte>EEUU</cte>
+			<cte>Alemania</cte>
+			<cte>Italia</cte>
+			<cte>Francia</cte>
+			<cte>Holanda</cte>
+			<cte>Japon</cte>
+		</dis>
+		<dis id="AUT_SEXO">
+			<cte>V</cte>
+			<cte>M</cte>
+		</dis>
+		<ref id="AUT_TITULACION" gen="carrera" />
+		<ajena id="FK_AUTOR_PAIS" tabla="pais" nom-colum="PAIS_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>AUT_NOMBRE</columna></candidata>
+		<candidata><columna>AUT_ID</columna></candidata>
+		<no-nulo><columna>FK_AUTOR_PAIS</columna></no-nulo>
+	</Restricciones>
+</Tabla>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ajena id="FK_ALUMNO" tabla="matricula" nom-colum="MAT_ID" />
+		<ajena id="FK_ASIGNATURA" tabla="asignatura" nom-colum="ASI_ID" />
+		<ajena id="FK_EXAMEN" tabla="examen" nom-colum="EXA_ID" />
+		<da_smart_key id="FK_FECHA" file="C:\bdm\etlgen\ora\da_smart_key.txt" />
+		<ajena id="FK_PROFESOR" tabla="profesor" nom-colum="PRO_ID" />
+		<real id="NOTA_NUMERICA" min="0.0" max="10.0" escala="2" paso="0.25" />
+		<int id="NUM_CONVOCATORIA" min="1" max="6" paso="1" />
+		<int id="NUM_HORAS_ESTUDIADAS" min="1" max="50" paso="5" />
+		<int id="NUM_LIBROS_LEIDOS" min="0" max="20" paso="1" />
+		<int id="PCENT_PREGUNTAS_CERO" min="0" max="60" paso="1" />
+		<int id="PCENT_PREGUNTAS_PERFECTAS" min="10" max="50" paso="1" />
+		<int id="PCENT_PREGUNTAS_PUNTUACION_MAX" min="0" max="100" paso="1" />
+		<int id="PCENT_PREGUNTAS_PUNTUACION_MIN" min="0" max="100" paso="1" />
+		<int id="PCENT_PREGUNTAS_VACIAS" min="0" max="30" paso="1" />
+		<real id="PUNTUACION_AVG_EJERCICIO" min="0.3" max="0.7" escala="2" paso="0.025" />
+		<real id="PUNTUACION_MAX_EJERCICIO" min="0.6" max="1.0" escala="2" paso="0.025" />
+		<real id="PUNTUACION_MED_EJERCICIO" min="0.3" max="1.0" escala="2" paso="0.025" />
+		<real id="PUNTUACION_MIN_EJERCICIO" min="0.0" max="0.3" escala="2" paso="0.025" />
+		<real id="PUNTUACION_VAR_EJERCICIO" min="0.3" max="0.7" escala="2" paso="0.025" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>FK_ALUMNO</columna>
+		           <columna>FK_ASIGNATURA</columna>
+		           <columna>FK_EXAMEN</columna>
+		           <columna>FK_FECHA</columna>
+		           <columna>FK_PROFESOR</columna>
+		</candidata>
+	</Restricciones>
+</Tabla>

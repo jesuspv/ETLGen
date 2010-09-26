@@ -1,0 +1,56 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="ciudad">
+		<cte>Vitoria</cte> 
+		<cte>Albacete</cte> 
+		<cte>Alicante</cte> 
+		<cte>Almería</cte> 
+		<cte>Oviedo</cte> 
+		<cte>Ávila</cte> 
+		<cte>Badajoz</cte> 
+		<cte>Palma de Mallorca</cte> 
+		<cte>Barcelona</cte> 
+		<cte>Burgos</cte> 
+		<cte>Cáceres</cte> 
+		<cte>Cádiz</cte> 
+		<cte>Santander</cte> 
+		<cte>Castellón de la Plana</cte> 
+		<cte>Ciudad Real</cte> 
+		<cte>Córdoba</cte> 
+		<cte>La Coruña</cte> 
+		<cte>Cuenca</cte> 
+		<cte>Gerona</cte> 
+		<cte>Granada</cte> 
+		<cte>Guadalajara</cte> 
+		<cte>San Sebastián</cte> 
+		<cte>Huelva</cte> 
+		<cte>Huesca</cte> 
+		<cte>Jaén</cte> 
+		<cte>Logroño</cte>
+		<cte>León</cte> 
+		<cte>Lérida</cte> 
+		<cte>Lugo</cte> 
+		<cte>Madrid</cte> 
+		<cte>Málaga</cte> 
+		<cte>Murcia</cte> 
+		<cte>Pamplona</cte> 
+		<cte>Orense</cte> 
+		<cte>Palencia</cte> 
+		<cte>Las Palmas de Gran Canaria</cte> 
+		<cte>Pontevedra</cte> 
+		<cte>Salamanca</cte> 
+		<cte>Santa Cruz de Tenerife</cte>
+		<cte>Segovia</cte> 
+		<cte>Sevilla</cte> 
+		<cte>Soria</cte> 
+		<cte>Tarragona</cte> 
+		<cte>Teruel</cte> 
+		<cte>Toledo</cte> 
+		<cte>Valencia</cte> 
+		<cte>Valladolid</cte> 
+		<cte>Bilbao</cte> 
+		<cte>Zamora</cte> 
+		<cte>Zaragoza</cte>
+	</dis>
+</Columnas>

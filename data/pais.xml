@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="PAIS_ID" gen="ID" />
+		<dis id="PAIS_NOMBRE">
+			<cte>España</cte>
+			<cte>España</cte>
+			<cte>Inglaterra</cte>
+			<cte>Francia</cte>
+			<cte>Italia</cte>
+			<cte>Alemania</cte>
+			<cte>Japón</cte>
+		</dis>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>PAIS_NOMBRE</columna></candidata>
+		<candidata><columna>PAIS_ID</columna></candidata>
+	</Restricciones>
+</Tabla>

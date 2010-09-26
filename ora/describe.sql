@@ -1,0 +1,11 @@
+desc alumno;
+desc asignatura;
+desc aula;
+desc examen;
+desc fecha;
+desc franja_horaria;
+desc libro;
+desc profesor;
+desc asistencia;
+desc abstencion;
+desc evaluacion;

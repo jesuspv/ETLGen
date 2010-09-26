@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<int id="MAT_CICLO" min="1" max="2" paso="1" />
+		<int id="MAT_CURSO" min="1" max="5" paso="1" />
+		<ref id="MAT_CURSO_ACADEMICO" gen="curso" />
+		<dis id="MAT_ENTIDAD_BANCARIA">
+			<cte>CAM</cte>
+			<cte>La caixa</cte>
+			<cte>Bancaja</cte>
+			<cte>BBVA</cte>
+		</dis>
+		<ref id="MAT_FECHA_MATRICULA" gen="fecha" />
+		<ref id="MAT_ID" gen="ID" />
+		<ref id="MAT_NOTA_LIT_CURSO_ANT" gen="nota" />
+		<real id="MAT_NOTA_NUM_CURSO_ANT" min="1.0" max="10.0" escala="2" paso="0.5" />
+		<int id="MAT_NUMERO" min="10000000" max="99999999" paso="1" />
+		<int id="MAT_NUM_APROBADOS_ANT" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_CUARTA" min="1" max="5" paso="1" />
+		<int id="MAT_NUM_ASIG_LE_" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_NO_PRIMERA" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_OBL" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_OPT" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_PRIMERA" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_QUINTA" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_SEGUNDA" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_TERCERA" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_ASIG_TRO" min="1" max="10" paso="1" />
+		<real id="MAT_NUM_CREDITOS" min="20.0" max="80.0" escala="2" paso="0.5" />
+		<real id="MAT_NUM_CRED_LE" min="2.0" max="50.0" escala="2" paso="0.5" />
+		<real id="MAT_NUM_CRED_OBL" min="2.0" max="50.0" escala="2" paso="0.5" />
+		<real id="MAT_NUM_CRED_OPT" min="2.0" max="50.0" escala="2" paso="0.5" />
+		<real id="MAT_NUM_CRED_TRO" min="2.0" max="50.0" escala="2" paso="0.5" />
+		<int id="MAT_NUM_MH_ANT" min="1" max="10" paso="1" />
+		<int id="MAT_NUM_SUSPENSOS_ANT" min="1" max="10" paso="1" />
+		<real id="MAT_PRECIO_MATRICULA" min="6.0" max="20.0" escala="2" paso="0.5" />
+		<real id="MAT_PRECIO_MEDIO_ASIG" min="20.0" max="60.0" escala="2" paso="0.5" />
+		<real id="MAT_PRECIO_MEDIO_CREDITO" min="6.0" max="20.0" escala="2" paso="0.5" />
+		<dis id="MAT_TARGETA_CREDITO">
+			<cte>VISA</cte>
+			<cte>Carnet Jove</cte>
+			<cte>Euromaster</cte>
+			<cte>VISA ORO</cte>
+		</dis>
+		<ajena id="FK_MATRICULA_EXPEDIENTE" tabla="expediente" nom-colum="EXP_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>MAT_NUMERO</columna></candidata>
+		<candidata><columna>MAT_ID</columna></candidata>
+		<no-nulo><columna>FK_MATRICULA_EXPEDIENTE</columna></no-nulo>
+	</Restricciones>
+</Tabla>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<dis id="calle">
+		<cte>Aneto, Calle  3F</cte>  
+		<cte>Anís, Calle del  5C</cte>  
+		<cte>Antonio Buero Vallejo, 3C</cte>  
+		<cte>Antonio Gala, Plaza de  3B</cte>  
+		<cte>Antonio López, 3C</cte>
+		<cte>Añil, Calle  6C</cte>  
+		<cte>Aralar, Calle  4F</cte>  
+		<cte>Canela, Calle de la 4C</cte> 
+		<cte>Canencia, Calle 3F</cte> 
+		<cte>Canteros, 2C</cte> 
+		<cte>Caños, Travesía de los 2D</cte>
+		<cte>Caracas, Calle de 5C</cte> 
+		<cte>Carmen Conde, Calle de 4C</cte> 
+		<cte>Carmesí, Plaza 5C</cte> 
+		<cte>Carrizal, Paseo del 2</cte>
+		<cte>Cartero Rural, Plaza del 3B</cte> 
+		<cte>Celeste, Plaza  5C</cte>
+		<cte>Central, Parque 3C, 3D</cte>
+		<cte>Central, Plaza 5B</cte> 
+		<cte>Centro-1, Residencial 5B</cte> 
+		<cte>Los Leones, Calle 3E</cte> 
+		<cte>Luna, Ronda de la 5B</cte> 
+		<cte>Luna, Travesía de la 4B</cte> 
+		<cte>Luna, Plaza de la 4C</cte> 
+		<cte>Luz, Avenida de la 4C</cte> 
+		<cte>Naranjo, Calle  2F</cte> 
+		<cte>Navacerrada, Calle de  2G</cte> 
+		<cte>Navalcaballo, 7D</cte> 
+		<cte>Neptuno, Calle de  5D</cte> 
+		<cte>Niebla, Calle de la  5B</cte> 
+		<cte>Nieve, Calle de la  5B</cte> 
+		<cte>Perdiz, Calle de la  8C</cte> 
+		<cte>Pico de San Pedro, Calle  1C</cte> 
+		<cte>Pico, Calle del 3C</cte>  
+		<cte>Piedrafita, Calle  2F</cte> 
+		<cte>Pimienta, Calle de la  4D</cte> 
+		<cte>Pintores, Sector  3C</cte> 
+		<cte>Piqueras, Calle  3F</cte> 
+		<cte>Planetas, Sector  5D</cte> 
+		<cte>Plomada, Plaza de la  5E</cte> 
+		<cte>Poniente, Ronda de  4A</cte> 
+		<cte>Poniente, Travesía de  4B</cte> 
+		<cte>Pueblos, Sector 2B</cte> 
+	</dis>
+</Columnas>

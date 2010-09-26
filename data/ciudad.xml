@@ -1,0 +1,14 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ref id="CIU_ID" gen="ID" />
+		<ref id="CIU_NOMBRE" gen="ciudad" />
+		<ajena id="FK_CIUDAD_PROVINCIA" tabla="provincia" nom-colum="PROV_ID" />
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>CIU_NOMBRE</columna></candidata>
+		<candidata><columna>CIU_ID</columna></candidata>
+		<no-nulo><columna>FK_CIUDAD_PROVINCIA</columna></no-nulo>
+	</Restricciones>
+</Tabla>

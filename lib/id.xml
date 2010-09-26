@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<!DOCTYPE Columnas SYSTEM "etc/ETL.dtd">
+<Columnas>
+	<int id="ID" min="10000" max="99999" paso="1" />
+</Columnas>

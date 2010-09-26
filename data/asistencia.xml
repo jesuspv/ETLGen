@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE Tabla SYSTEM "etc/ETL.dtd">
+<Tabla sp-campos=";" sp-filas="\r\n">
+	<Columnas maxtam="50" delim="&quot;">
+		<ajena id="FK_ASIGNATURA" tabla="asignatura" nom-colum="ASI_ID" />
+		<ajena id="FK_AULA" tabla="aula" nom-colum="AUL_ID" />
+		<da_smart_key id="FK_FECHA" file="C:\bdm\etlgen\ora\da_smart_key.txt" />
+		<ajena id="FK_FRANJA_HORARIA" tabla="franjahoraria" nom-colum="FRH_ID" />
+		<ajena id="FK_ALUMNO" tabla="matricula" nom-colum="MAT_ID" />
+		<ajena id="FK_PROFESOR" tabla="profesor" nom-colum="PRO_ID" />
+		<cte id="DUMMY">1</cte>
+	</Columnas>
+	<Restricciones>
+		<candidata><columna>FK_ASIGNATURA</columna>
+		           <columna>FK_AULA</columna>
+		           <columna>FK_FECHA</columna>
+		           <columna>FK_FRANJA_HORARIA</columna>
+		           <columna>FK_ALUMNO</columna>
+		           <columna>FK_PROFESOR</columna>
+		</candidata>
+		<no-nulo><columna>DUMMY</columna></no-nulo>
+	</Restricciones>
+</Tabla>
